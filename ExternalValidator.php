@@ -27,8 +27,8 @@ class ExternalValidator {
 
     public function validate($bookingData){
         try{
-            $timeStart = microtime(true);
-            $this->_log($bookingData);
+            // $timeStart = microtime(true);
+            // $this->_log($bookingData);
 
             // //It is an example of service validation. Similarly, you can check the provider, client or number of bookings
             // if (!isset($bookingData['service_id']) || $bookingData['service_id'] != 9) {
@@ -66,9 +66,9 @@ class ExternalValidator {
             //     return false;
             // }
 
-            // //It is the example of changing the Intake Form value.
-            // // This value will be saved on the SimplyBook.me side.
-            // // Please note that only Intake Form can be changed (provider or service cannot be changed)
+            //It is the example of changing the Intake Form value.
+            // This value will be saved on the SimplyBook.me side.
+            // Please note that only Intake Form can be changed (provider or service cannot be changed)
             // $result = array(
             //     'checkString' => "replaced text", //Change the value of the 'Some string' field. The value will be saved on the SimplyBook.me side, as if entered by the client
             // );
